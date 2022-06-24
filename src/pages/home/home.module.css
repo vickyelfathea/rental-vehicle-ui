@@ -1,5 +1,5 @@
 .container {
-  width: 60%;
+  width: 82%;
   padding: 0;
   margin: 50px auto;
 }
@@ -9,4 +9,15 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+
+.sub {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sub > a {
+  font-weight: 900;
+  color: #fb8f1d;
 }

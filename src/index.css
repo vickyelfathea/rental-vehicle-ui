@@ -8,11 +8,9 @@
   font-family: Nunito;
 }
 
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
+h2 {
+  font-family: Playfair Display;
+  text-transform: capitalize;
 }
 
 a {
@@ -24,4 +22,11 @@ button {
   padding: 0;
   border: none;
   font-weight: 900;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
 }
