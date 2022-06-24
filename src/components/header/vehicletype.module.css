@@ -1,0 +1,12 @@
+.content {
+  margin: auto 100px;
+}
+
+.nav {
+  height: 100px;
+  background-color: white;
+}
+
+.navbold {
+  font-weight: bold;
+}
