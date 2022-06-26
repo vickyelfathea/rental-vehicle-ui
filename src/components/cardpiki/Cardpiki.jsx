@@ -10,9 +10,12 @@ function Cardpiki(props) {
   };
   return (
     <>
-      <Card bg={props.image}>
+      <Card key={props.id} bg={props.image} backdrop={props.backdrop}>
         <div>
-          <h4>{props.title}</h4>
+          <Link to={`detail/${props.id}`} className="LinkStyle">
+            <h4>{props.title}</h4>
+          </Link>
+
           <p>{props.city}</p>
         </div>
       </Card>

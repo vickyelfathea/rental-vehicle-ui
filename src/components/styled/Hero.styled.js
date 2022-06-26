@@ -4,7 +4,7 @@ import foto from '../hero/cloud-sky.jpg';
 export const Hero = styled.div`
   height: 767px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
-    url('${foto}');
+    url('https://images.unsplash.com/photo-1454446795696-20d78459b317?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80');
   //   background-color: pink;
   background-position: center;
   background-repeat: no-repeat;

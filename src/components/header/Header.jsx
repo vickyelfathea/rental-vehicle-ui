@@ -19,16 +19,17 @@ function header() {
             />
           </Navbar.Brand>
           <Nav>
-            <Nav>
+            <div className={style.navmain}>
               <Link href="/">Home</Link>
               <Link href="/vehicles">Vehicle Type</Link>
               <Link href="#">History</Link>
               <Link href="#">About</Link>
-            </Nav>
-            <Nav className={style.content}>
+            </div>
+
+            <div className={style.content}>
               <Link href="/">Home</Link>
               <Link href="/vehicles">Vehicle Type</Link>
-            </Nav>
+            </div>
           </Nav>
         </Container>
       </Navbar>

@@ -1,12 +1,55 @@
-.container {
-  width: 60%;
-  padding: 0;
-  margin: 50px auto;
+h2 {
+  font-family: Nunito;
+  font-weight: 700;
+}
+
+h4 {
+  font-family: Playfair Display;
+  font-size: 48px;
+  font-weight: 900;
+}
+
+h5 {
+  font-family: Playfair Display;
+  font-size: 36px;
+  font-weight: 400;
+}
+
+a:hover {
+  color: black;
 }
 
 .content {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: start;
+  align-self: flex-start;
+  flex-wrap: wrap;
+  position: relative;
   /* border: 1px solid gray; */
+}
+
+.image {
+  width: 610px;
+  height: 409px;
+  object-fit: cover;
+  border-radius: 8px;
+  align-items: flex-start;
+}
+
+.rightside {
+  padding-left: 40px;
+  font-family: Playfair Display;
+  text-transform: capitalize;
+  width: 420px;
+}
+
+.price {
+  text-align: right;
+  font-family: Playfair Display;
+  font-size: 26px;
+  font-weight: 900;
+}
+
+.newdiv {
+  padding-top: 50px;
 }

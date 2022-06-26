@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import { Button, Image } from 'react-bootstrap';
 import { useParams } from 'react-router-dom';
 import style from './detail.module.css';
 import axios from 'axios';
 import Header from '../../components/header/Header';
+import Footer from '../../components/footer/Footer';
+import Button from '../../components/button/Button';
 
 function Details() {
   const [data, setData] = useState({});
@@ -11,9 +12,9 @@ function Details() {
 
   useEffect(() => {
     axios
-      .get(`https://hplussport.com/api/products?id=${params.id}`)
+      .get(`https://car-rent-vicky.herokuapp.com/vehicles/${params.id}`)
       .then((res) => {
-        setData(res.data[0]);
+        setData(res.data.data);
       })
       .catch((err) => {
         console.log('🚀 ~ file: detail.jsx ~ line 16 ~ axios.get ~ err', err);
@@ -23,26 +24,45 @@ function Details() {
   return (
     <>
       <Header />
-      <div className={style.container}>
+      <div className="container">
+        <div className="sub">
+          <h2>Detail</h2>
+        </div>
+
         <div className={style.content}>
-          <Image style={{ width: '20rem' }} src={data.image} />
-          <div className="desc">
+          <img src={data.image} alt={data.name} className={style.image} />
+          <div className={style.rightside}>
             <h4>{data.name}</h4>
-            <p style={{ padding: '0px 0px 5px' }}>{data.description}</p>
-            <div
-              className="card-footer"
-              style={{
-                display: 'flex',
-                justifyContent: 'space-between',
-                alignItems: 'center',
-              }}
-            >
-              <h4>${data.price}</h4>
-              <Button>Buy</Button>
-            </div>
+            <h5>{data.city}</h5>
+            <p>
+              Available <br /> No repayment
+            </p>
+
+            <p>
+              Capacity: 1 person <br /> Type: {data.type} <br /> Reservation
+              befor: {data.type}{' '}
+            </p>
+
+            <p className={style.price}>Rp.78.000/day</p>
+          </div>
+          <div className={style.newdiv}>
+            <Button
+              val="Chat admin"
+              clrbg="#393939"
+              clrfnt="#FFCD61"
+              wdth="421px"
+            />
+            <Button
+              val="Reservation"
+              clrbg="#FFCD61"
+              clrfnt="#393939 "
+              wdth="410px"
+            />
+            <Button val="Like" clrbg="#393939" clrfnt="#FFCD61" wdth="225px" />
           </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 }
