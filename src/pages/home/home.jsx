@@ -4,6 +4,7 @@ import axios from 'axios';
 import Header from '../../components/header/Header';
 import Hero from '../../components/hero/Hero';
 import Cardpiki from '../../components/cardpiki/Cardpiki';
+import Cardtesti from '../../components/cardpiki/Cardtesti';
 import Footer from '../../components/footer/Footer';
 
 function Home() {
@@ -27,7 +28,7 @@ function Home() {
 
   return (
     <>
-      <Header />
+      <Header home="bold" />
       <Hero />
       <div className={style.container}>
         <div className="sub">
@@ -64,7 +65,7 @@ function Home() {
             </span>
             <br /> Founder Circle
           </div>
-          <Cardpiki backdrop="https://i.pinimg.com/736x/0a/6b/0f/0a6b0fa2770cfad622884fd241c9f628.jpg" />
+          <Cardtesti backdrop="https://i.pinimg.com/736x/0a/6b/0f/0a6b0fa2770cfad622884fd241c9f628.jpg" />
         </div>
       </div>
 

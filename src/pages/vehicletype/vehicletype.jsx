@@ -3,15 +3,16 @@ import style from './vehicletype.module.css';
 import axios from 'axios';
 import Header from '../../components/header/Header';
 import Cardpiki from '../../components/cardpiki/Cardpiki';
-import Cards from '../../components/cards/Cards';
+import { useParams } from 'react-router-dom';
 
 function Home() {
   const [prod, setProd] = useState([]);
+  // const params = useParams();
 
   const getDataProd = async () => {
     try {
       const { data } = await axios.get(
-        'https://car-rent-vicky.herokuapp.com/vehicles/'
+        `https://car-rent-vicky.herokuapp.com/vehicles/`
       );
       setProd(data.data);
     } catch (error) {
@@ -26,7 +27,7 @@ function Home() {
 
   return (
     <>
-      <Header />
+      <Header vehicle="bold" />
       <div className="container">
         <div className="sub">
           <h2>popular in town</h2>

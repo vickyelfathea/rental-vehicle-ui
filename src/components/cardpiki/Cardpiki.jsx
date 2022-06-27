@@ -10,15 +10,18 @@ function Cardpiki(props) {
   };
   return (
     <>
-      <Card key={props.id} bg={props.image} backdrop={props.backdrop}>
-        <div>
-          <Link to={`detail/${props.id}`} className="LinkStyle">
-            <h4>{props.title}</h4>
-          </Link>
+      <a href={`detail/${props.id}`}>
+        {' '}
+        <Card key={props.id} bg={props.image} backdrop={props.backdrop}>
+          <div onclick="location.href='#'">
+            <Link to={`detail/${props.id}`} className="LinkStyle">
+              <h4>{props.title}</h4>
+            </Link>
 
-          <p>{props.city}</p>
-        </div>
-      </Card>
+            <p>{props.city}</p>
+          </div>
+        </Card>
+      </a>
     </>
   );
 }

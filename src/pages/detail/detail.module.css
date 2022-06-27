@@ -28,6 +28,19 @@ a:hover {
   /* border: 1px solid gray; */
 }
 
+.contentbelow {
+  width: inherit;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  /* justify-content: center; */
+  /* border: 1px solid gray; */
+}
+
+.leftside {
+  width: 610px;
+}
+
 .image {
   width: 610px;
   height: 409px;
@@ -36,20 +49,78 @@ a:hover {
   align-items: flex-start;
 }
 
+.containersub {
+  width: 610px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.containercounter {
+  width: 505px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.counter {
+  width: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 75px;
+  padding-left: 10px;
+}
+
+.counter > p {
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.imagebelow {
+  width: 244px;
+  height: 163px;
+  object-fit: cover;
+  border-radius: 8px;
+  align-items: flex-start;
+}
+
+.images {
+  width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .rightside {
   padding-left: 40px;
   font-family: Playfair Display;
   text-transform: capitalize;
-  width: 420px;
+  width: 440px;
 }
 
 .price {
+  padding-top: 10px;
   text-align: right;
   font-family: Playfair Display;
-  font-size: 26px;
+  font-size: 35px;
   font-weight: 900;
 }
 
 .newdiv {
   padding-top: 50px;
+}
+
+.container {
+  width: 83%;
+  padding-top: 20px;
+  margin: 50px auto;
+}
+
+.heading {
+  padding-bottom: 20px;
 }

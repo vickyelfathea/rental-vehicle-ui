@@ -27,6 +27,7 @@ export const Card = styled.div`
     width: 120px;
     color: black;
     padding-left: 5px;
+    cursor: pointer;
 
     h4 {
       padding-top: 10px;

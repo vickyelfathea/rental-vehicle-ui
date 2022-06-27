@@ -4,7 +4,13 @@ import { Btn } from '../styled/Button.styled';
 const Button = (props) => {
   return (
     <>
-      <Btn clrbg={props.clrbg} clrfnt={props.clrfnt} wdth={props.wdth}>
+      <Btn
+        clrbg={props.clrbg}
+        clrfnt={props.clrfnt}
+        wdth={props.wdth}
+        size={props.size}
+        onClick={props.onClick}
+      >
         {props.val}
       </Btn>
     </>

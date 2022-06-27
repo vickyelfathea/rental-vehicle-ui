@@ -10,3 +10,8 @@
 .navbold {
   font-weight: bold;
 }
+
+.thumbnail {
+  width: 30px;
+  border-radius: 50px;
+}

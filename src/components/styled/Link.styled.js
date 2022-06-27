@@ -5,10 +5,11 @@ export const Link = styled.a`
   display: inline-block;
   color: gray;
   text-decoration: none !important;
+  font-weight: ${({ bold }) => (bold ? '600' : '300')};
   &:hover {
     color: black;
   }
   &:focus {
-    color: yellow;
+    color: black;
   }
 `;
