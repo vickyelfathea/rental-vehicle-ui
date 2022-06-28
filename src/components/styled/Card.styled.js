@@ -19,6 +19,11 @@ export const Card = styled.div`
   margin-bottom: 20px;
   text-transform: capitalize;
 
+  :hover {
+    transform: scale(1.03);
+    transition-duration: 0.4s;
+  }
+
   div {
     background-color: white;
     align-self: flex-end;

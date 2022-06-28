@@ -3,6 +3,7 @@ import style from './vehicletype.module.css';
 import axios from 'axios';
 import Header from '../../components/header/Header';
 import Cardpiki from '../../components/cardpiki/Cardpiki';
+import Footer from '../../components/footer/Footer';
 import { useParams } from 'react-router-dom';
 
 function Home() {
@@ -105,6 +106,8 @@ function Home() {
           })}
         </div>
       </div>
+
+      <Footer></Footer>
     </>
   );
 }

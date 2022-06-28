@@ -3,14 +3,18 @@ import styled from 'styled-components';
 export const Foot = styled.div`
   height: auto;
   background-color: #f9f9fb;
-  box-si
+
+  hr {
+    width: 88%;
+    margin: auto;
+  }
 `;
 
 export const Content = styled.div`
   margin: 50px auto 0px;
   display: flex;
   flex-wrap: wrap;
-  padding: 100px;
+  padding: 60px 100px;
   font-family: Mulish;
   font-size: 18px;
   color: #848484;
@@ -39,5 +43,19 @@ export const Content = styled.div`
     padding-top: 1rem;
     color: #848484;
     font-size: 17px;
+  }
+`;
+
+export const Logo = styled.div`
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  a {
+    & > img {
+      width: 20px;
+      margin: 10px;
+    }
   }
 `;

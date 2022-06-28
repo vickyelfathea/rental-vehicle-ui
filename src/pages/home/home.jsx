@@ -33,7 +33,7 @@ function Home() {
       <div className={style.container}>
         <div className="sub">
           <h2>popular in towns</h2>
-          <a href="#viewall">view all {'>'} </a>
+          <a href="/vehicles">view all {'>'} </a>
         </div>
 
         <div className="content">

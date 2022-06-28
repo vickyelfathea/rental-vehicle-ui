@@ -64,39 +64,43 @@ function Details() {
           </div>
 
           <div className={style.rightside}>
-            <h4>{data.name}</h4>
-            <h5>{data.city}</h5>
-            <p>
-              <br />
-              Available <br /> No repayment
-            </p>
+            <div className={style.pst}>
+              <h4>{data.name}</h4>
+              <h5>{data.city}</h5>
+              <p>
+                <br />
+                Available <br /> No repayment
+              </p>
 
-            <p>
-              Capacity: 1 person <br /> Type: {data.type} <br /> Reservation
-              befor: {data.type} <br /> <br />
-            </p>
+              <p>
+                Capacity: 1 person <br /> Type: {data.type} <br /> Reservation
+                befor: {data.type} <br /> <br />
+              </p>
+            </div>
 
             <p className={style.price}>Rp.78.000/day</p>
 
-            <div className={style.counter}>
-              <Button
-                onClick={incrementCount}
-                val="+"
-                clrbg="#FFCD61"
-                clrfnt="#393939"
-                wdth="100px"
-                size="40px"
-              />
-
-              <p>{num}</p>
-              <Button
-                onClick={decrementCount}
-                val="-"
-                clrbg="#CBCBD433"
-                clrfnt="#393939"
-                wdth="100px"
-                size="40px"
-              />
+            <div className={style.counters}>
+              <div className={style.counter}>
+                {' '}
+                <Button
+                  onClick={incrementCount}
+                  val="+"
+                  clrbg="#FFCD61"
+                  clrfnt="#393939"
+                  wdth="100px"
+                  size="40px"
+                />
+                <p>{num}</p>
+                <Button
+                  onClick={decrementCount}
+                  val="-"
+                  clrbg="#CBCBD433"
+                  clrfnt="#393939"
+                  wdth="100px"
+                  size="40px"
+                />
+              </div>
             </div>
           </div>
 

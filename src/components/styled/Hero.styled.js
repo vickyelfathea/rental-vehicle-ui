@@ -14,6 +14,7 @@ export const Hero = styled.div`
   h1 {
     color: white;
     font-family: Playfair Display;
+    font-weight: 700;
     font-size: 64px;
     padding-left: 10px;
     padding-top: 100px;
@@ -39,7 +40,7 @@ export const Hero = styled.div`
     padding-left: 30px;
     margin-left: 30px;
     border-radius: 6px;
-    font-weight: 900;
+    font-weight: 700;
     text-transform: capitalize;
     opacity: 0.5;
     display: inline-block;

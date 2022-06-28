@@ -1,5 +1,5 @@
 import React from 'react';
-import { Foot, Content } from '../styled/Footer.styled';
+import { Foot, Content, Logo } from '../styled/Footer.styled';
 import logo from './logo.svg';
 
 const Footer = () => {
@@ -23,7 +23,7 @@ const Footer = () => {
               for vehicle information from us
             </p>{' '}
             <br />
-            <p>2020 Vicky Vehicle Rental Center. All rights reserved</p>
+            <p>2022 Vicky Vehicle Rental Center. All rights reserved</p>
           </div>
           <ul>
             {' '}
@@ -53,6 +53,33 @@ const Footer = () => {
             <li>Culinary Trip</li>
           </ul>
         </Content>
+        <hr />
+        <Logo>
+          <a href="">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Twitter-logo.svg/2491px-Twitter-logo.svg.png"
+              alt=""
+            />
+          </a>
+          <a href="">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/1365px-Facebook_f_logo_%282019%29.svg.png"
+              alt=""
+            />
+          </a>
+          <a href="">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/2560px-YouTube_full-color_icon_%282017%29.svg.png"
+              alt=""
+            />
+          </a>
+          <a href="">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png"
+              alt=""
+            />
+          </a>
+        </Logo>
       </Foot>
     </>
   );

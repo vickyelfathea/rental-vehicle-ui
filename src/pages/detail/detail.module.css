@@ -7,6 +7,7 @@ h4 {
   font-family: Playfair Display;
   font-size: 48px;
   font-weight: 900;
+  position: relative;
 }
 
 h5 {
@@ -17,6 +18,10 @@ h5 {
 
 a:hover {
   color: black;
+}
+
+.pst {
+  height: 360px;
 }
 
 .content {
@@ -66,14 +71,21 @@ a:hover {
   justify-content: center;
 }
 
+.counters {
+  width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 45px;
+  margin-left: 10px;
+}
+
 .counter {
   width: 400px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  padding-top: 75px;
-  padding-left: 10px;
 }
 
 .counter > p {
