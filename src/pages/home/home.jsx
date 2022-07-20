@@ -1,29 +1,54 @@
 import React, { useState, useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
 import style from './home.module.css';
 import axios from 'axios';
+import { addUsers } from '../../store/reducer/users';
 import Header from '../../components/header/Header';
 import Hero from '../../components/hero/Hero';
 import Cardpiki from '../../components/cardpiki/Cardpiki';
 import Cardtesti from '../../components/cardpiki/Cardtesti';
 import Footer from '../../components/footer/Footer';
+import useApi from '../../helpers/useApi';
 
 function Home() {
   const [prod, setProd] = useState([]);
+  const { isAuth } = useSelector((state) => state.users);
+
+  const api = useApi();
+  const dispatch = useDispatch();
 
   const getDataProd = async () => {
-    try {
-      const { data } = await axios.get(
-        'https://car-rent-vicky.herokuapp.com/vehicles/'
-      );
-      setProd(data.data);
-    } catch (error) {
-      console.log('🚀 ~ file: home.jsx ~ line 14 ~ getDataProd ~ error', error);
-    }
+    api
+      .requests({
+        method: 'GET',
+        url: '/vehicles/',
+      })
+      .then((res) => {
+        const { data } = res.data;
+        setProd(data);
+      })
+      .catch((err) => console.log(err));
+  };
+
+  const getUsers = async () => {
+    api
+      .requests({
+        method: 'GET',
+        url: '/users',
+      })
+      .then((res) => {
+        const { data } = res.data;
+        dispatch(addUsers(data));
+      })
+      .catch((err) => console.log(err));
   };
 
   // didmount
   useEffect(() => {
     getDataProd();
+    if (isAuth) {
+      getUsers();
+    }
   }, []);
 
   return (

@@ -1,10 +1,15 @@
 import React from 'react';
 import { Navbar, Container, Nav } from 'react-bootstrap';
+import { useSelector } from 'react-redux';
 import { Link } from '../styled/Link.styled';
 import style from './vehicletype.module.css';
 import logo from './logo.svg';
+import { Dropdown } from 'react-bootstrap';
 
-function header(props) {
+const Header = (props) => {
+  const { isAuth, data } = useSelector((state) => state.users);
+  console.log(data);
+
   return (
     <>
       <Navbar className={style.nav}>
@@ -31,7 +36,8 @@ function header(props) {
             </div>
 
             <div className={style.content}>
-              <Link href="/">Login</Link>
+              {isAuth ? <Link href="/">{data.username}</Link> : null}
+              <Link href="/">{data.username}</Link>
               <Link href="/">
                 <img
                   className={style.thumbnail}
@@ -45,6 +51,6 @@ function header(props) {
       </Navbar>
     </>
   );
-}
+};
 
-export default header;
+export default Header;
