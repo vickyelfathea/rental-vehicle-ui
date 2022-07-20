@@ -1,5 +1,5 @@
 <h1 align="center">
-  Golang Restfull Api With Gorilla/mux: Rental Vehicle
+  React With Redux: Rental Vehicle Frontend
 </h1>
 
 <p align="center"><img src="./Screenshot_2.jpg" width="100%" alt="rental vehicle" /></p>
