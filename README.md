@@ -15,24 +15,22 @@ git clone https://github.com/vickyelfathea/rental-vehicle-ui.git
 2. Install dependencies
 
 ```bash
-go get -u ./...
-# or
-go mod tidy
+npm install
 ```
 
 3. Run the app
 
 ```bash
-go run *.go
+npm start
 ```
 
 🌟 You are all set!
 
 ## 💻 Built with
 
-- [Golang](https://go.dev/)
-- [gorilla/mux](https://github.com/gorilla/mux): for handle http request
-- [Postgres](https://www.postgresql.org/): for DBMS
+- [React](https://reactjs.org/)
+- [Redux](https://redux.js.org/): for connecting backend
+- [Styled components](https://styled-components.com/): for CSS 
 
 <hr>
 <p align="center">
