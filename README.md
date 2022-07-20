@@ -4,19 +4,12 @@
 
 <p align="center"><img src="./Screenshot_2.jpg" width="100%" alt="rental vehicle" /></p>
 
-<p align="center">
-    <a href="https://www.fazztrack.com/" target="blank">Our Website</a>
-    ·
-    <a href="https://www.fazztrack.com/class/backend-golang">Join With Us</a>
-    ·
-</p>
-
 ## 🛠️ Installation Steps
 
 1. Clone the repository
 
 ```bash
-git clone https://github.com/vickyelfathea/rental-vehicle.git
+git clone https://github.com/vickyelfathea/rental-vehicle-ui.git
 ```
 
 2. Install dependencies
