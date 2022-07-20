@@ -2,7 +2,7 @@
   Golang Restfull Api With Gorilla/mux: Rental Vehicle
 </h1>
 
-<p align="center"><img src="./Screenshot_2.jpg" width="400px" alt="rental vehicle" /></p>
+<p align="center"><img src="./Screenshot_2.jpg" width="100%" alt="rental vehicle" /></p>
 
 <p align="center">
     <a href="https://www.fazztrack.com/" target="blank">Our Website</a>
