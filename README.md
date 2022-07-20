@@ -4,6 +4,10 @@
 
 <p align="center"><img src="./Screenshot_2.jpg" width="100%" alt="rental vehicle" /></p>
 
+## 🔗 Click me!
+
+- [Live version](https://bit.ly/Rental-Vehicle-FE)
+
 ## 🛠️ Installation Steps
 
 1. Clone the repository
