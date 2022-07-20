@@ -4,7 +4,7 @@
 
 <p align="center"><img src="./Screenshot_2.jpg" width="100%" alt="rental vehicle" /></p>
 
-## 🔗 Click me!
+## 🔗 Click down here!
 
 - [Live version](https://bit.ly/Rental-Vehicle-FE)
 
